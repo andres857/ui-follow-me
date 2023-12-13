@@ -9,13 +9,24 @@ import MagnifyingGlass from 'astro-heroicons/outline/MagnifyingGlass.astro'
 
             <!-- menu section -->
             <div class="grid grid-cols-10 place-items-center pt-10">
-                <div class=" col-start-2 col-span-8 w-full gap-2 flex  ">
-                    <input type="search" class=" bg-slate-100 w-full px-4 rounded-xl h-14 text-2xl focus:outline-none"
-                        placeholder="Buscar" x-model="search">
+                <div class=" col-start-2 col-span-8 w-full gap-2 ">
 
-                        <div class="bg-follow rounded-xl">
-                            <MagnifyingGlass class=" text-white h-14 p-3"/>
+                    <div class="grid grid-cols-10 gap-2">
+
+                        <div class="col-span-1 bg-follow rounded-xl">
+                            <MagnifyingGlass class=" text-white h-14 p-3 mx-auto"/>
                         </div>
+
+                        <div class="col-span-7">
+                            <input type="search" class=" bg-slate-100 w-full px-4 rounded-xl h-14 text-2xl focus:outline-none"
+                            placeholder="Buscar" x-model="search">
+                        </div>
+                        
+                        <div class="col-span-2 w-full">
+                            <button class=" bg-red-500 w-full text-white rounded-xl text-2xl h-14"> Iniciar </button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 
