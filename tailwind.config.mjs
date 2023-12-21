@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors:{
-				'follow': '#1C3154',
+				'follow': '#670388',
 				'Dark-gray-blue-alpha': 'hsl(224, 30%, 27%, 0.5)',
 			}
 		},
