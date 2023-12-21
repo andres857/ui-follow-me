@@ -2,40 +2,34 @@
 import MagnifyingGlass from 'astro-heroicons/outline/MagnifyingGlass.astro'
 ---
 
-<body class="flex flex-col items-center justify-center w-screen h-screen bg-white text-gray-700">
+<body class="flex flex-col items-center justify-center w-screen h-screen bg-[url('https://ca-times.brightspotcdn.com/dims4/default/c6609a8/2147483647/strip/true/crop/5403x3602+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1a%2Fb1%2F9a3cadab1ab8adbf90c35cc7858c%2F5cc50093993a41fa88c0943dcb1affaa')] text-gray-700">
 
 	<!-- Component Start -->
     <h1 class=" pb-60">Follow</h1>
 	<form class="flex flex-col fixed bg-white shadow-xl shadow-slate-500 rounded-2xl p-3 h-[800px] w-[800px]" action="">
-        <label class="font-semibold text-4xl mt-3 text-center" for="passwordField">Bienvenido</label>
-        <a class="font-normal text-center text-3xl mt-3 pb-10" for="passwordField">Registrate o crea una cuenta</label>
-		<input class="flex items-center text-center h-16 px-14 w-[750px] bg-white border-2 border-gray-500  mt-16  rounded focus:outline-none focus:ring-2" placeholder="Correo electronico" type="text">
-		<input class="flex items-center h-16 text-center px-14 w-[750px] bg-white border-2 border-gray-500 mt-4 rounded focus:outline-none focus:ring-2" placeholder="Contrasena" type="password">
-		<div class="flex flex-col-2 mt-6 justify-center text-4xl">
-			<a class="text-blue-400 text-2xl hover:text-blue-500" href="#">Olvidaste la contrasena?</a>
+        <label class="font-semibold text-4xl mt-3 text-center pt-5" for="passwordField">Bienvenido</label>
+        <label class="font-normal text-center text-3xl mt-3 pb-10" for="passwordField">Registrate o crea una cuenta</label>
+		<input class="flex items-center text-center h-16 text-3xl px-14 w-[750px] bg-white border-2 border-gray-500  mt-16  rounded focus:outline-none focus:ring-2" placeholder="Correo electronico" type="text">
+		<input class="flex items-center h-16 text-center text-3xl px-14 w-[750px] bg-white border-2 border-gray-500 mt-4 rounded focus:outline-none focus:ring-2" placeholder="Contrasena" type="password">
+		<div class="flex flex-col-2 mt-6 justify-around  text-4xl">
+            <div>
+			<a class="text-blue-400 text-2xl justify-center hover:text-follow">Olvidaste la contrasena?</a>
+            </div>
             <span></span>
-			<button class="flex items-center justify-center h-12 px-6 w-64 bg-follow mt-8 rounded font-semibold text-3xl text-blue-100 hover:bg-blue-700">Login</button>
-		</div>
+            <div>
+			<button class="flex items-center justify-center h-20 px-6 w-64 bg-follow mt-8 rounded-3xl font-semibold text-3xl text-blue-100 hover:bg-blue-700">Login</button>
+            </div>
+        </div>
+        <div class="flex items-center justify-center pt-28">
+            <label class="font-normal text-center text-3xl mt-3 pb-10">no tienes una cuenta?</label> <a class="font-bold text-center text-3xl mt-3 pb-10 text-follow">registrate</a>
+        </div>
+        
 	</form>
 	<!-- Component End  -->
 
-<footer class="fixed bottom-0 left-0 z-20 w-full h-[200px] p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
+<footer class="fixed bottom-0 left-0 z-20 w-full h-[230px] p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6">
+    
+    
 </footer>
 
 
