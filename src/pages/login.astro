@@ -2,108 +2,41 @@
 import MagnifyingGlass from 'astro-heroicons/outline/MagnifyingGlass.astro'
 ---
 
-<body class=" bg-white min-h-screen ">
-    <section >
-        <!-- card -->
-        <div class=" grid grid-rows bg-white m-5 mb-0 rounded-xl">
+<body class="flex flex-col items-center justify-center w-screen h-screen bg-white text-gray-700">
 
-            <!-- menu section -->
-            <div class="grid grid-cols-12 place-items-center pt-10">
-                <div class=" col-start-0 col-span-12 w-full ">
+	<!-- Component Start -->
+    <h1 class=" pb-60">Follow</h1>
+	<form class="flex flex-col fixed bg-white shadow-xl shadow-slate-500 rounded-2xl p-3 h-[500px] w-[800px]" action="">
+        <label class="font-semibold text-4xl mt-3 text-center" for="passwordField">Bienvenido</label>
+        <a class="font-normal text-center text-3xl mt-3 pb-10" for="passwordField">Registrate o crea una cuenta</label>
+		<input class="flex items-center text-center h-12 px-14 w-auto bg-white border-2 border-gray-500  mt-2 rounded focus:outline-none focus:ring-2" placeholder="Correo electronico" type="text">
+		<input class="flex items-center h-12 text-center px-14 w-auto bg-white border-2 border-gray-500 mt-4 rounded focus:outline-none focus:ring-2" placeholder="Contrasena" type="password">
+		<div class="flex mt-6 justify-center text-4xl">
+			<a class="text-blue-400 text-2xl hover:text-blue-500" href="#">Olvidaste la contrasena?</a>
+            <span></span>
+			<button class="flex items-center justify-center h-12 px-6 w-64 bg-follow mt-8 rounded font-semibold text-3xl text-blue-100 hover:bg-blue-700">Login</button>
+		</div>
+	</form>
+	<!-- Component End  -->
 
-                    <div class="grid grid-cols-10">
+<footer class="fixed bottom-0 left-0 z-20 w-full h-[200px] p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+</footer>
 
-                        <div class="col-span-1 bg-follow rounded-l-2xl ">
-                            <MagnifyingGlass class=" text-white h-full p-3 mx-auto "/>
-                        </div>
-
-                        <div class="col-span-8 p-0">
-                            <input type="search" class=" bg-slate-100 w-full px-4 h-full text-2xl focus:outline-none"
-                            placeholder="Buscar" x-model="search">
-                        </div>
-                        
-                        <div class="col-span-1 w-full">
-                            <button class=" bg-follow w-full text-white rounded-r-2xl text-2xl h-full">
-                                <MagnifyingGlass class=" text-white h-full p-3 mx-auto"/>
-                            </button>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <!-- Tiempo restante -->
-            <div class="flex place-content-between items-center mx-24 text-3xl my-7">
-                    <p> Tiempo Estimado: <span class=" text-follow font-bold"> 2 Minutos </span> </p>
-                    <p> Progreso actual: <span class=" text-follow font-bold"> 38% </span> </p>
-            </div>
-            <!-- Tiempo restante -->
-
-            <!-- Progress -->
-            <div class=" grid grid-cols-12 h-[40px]">
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" bg-follow w-[40px] rounded-full">
-                </div>
-                <div class=" border-2 border-follow w-[40px] rounded-full">
-                </div>
-                <div class=" border-2 border-follow w-[40px] rounded-full">
-                </div>
-                <div class=" border-2 border-follow w-[40px] rounded-full">
-                </div>
-                <div class=" border-2 border-follow w-[40px] rounded-full">
-                </div>
-            </div>
-            <!-- Progress -->
-            
-        </div>
-        <!-- card -->
-    </section>
-    <!-- menu section -->
-
-    <!-- Image Section -->
-    <section class=" grid grid-rows px-6 py-6 mt-0 ">
-        <!-- Indication Section -->
-        <div class=" flex bg-follow items-center h-[170px] rounded-t-3xl mb-0 pb-0 ">
-            <h3 class="text-white text-[50px] font-normal mx-auto">Sigue recto</h3>
-        </div>
-        <!-- Image -->
-        <div class="relative mt-0 pt-0">
-
-            <div class="absolute top-6 w-full flex justify-end items-center px-5 h-[100px] pt-6 ">
-
-
-                <div class= " flex flex-col justify-center items-center bg-white w-[120px] h-[120px] rounded-2xl">
-                    <p class=" text-[30px] text-gray-800 ">
-                        Piso
-                    </p>
-                    <p class="text-follow text-[50px] -mt-6 font-bold ">
-                        1
-                    </p>
-                </div>
-            </div>
-
-            <img src="https://winbox-assets.sfo3.digitaloceanspaces.com/followtest/IMG_1911.jpg" class="object-contain h-full w-full rounded-b-lg">
-        </div>
-
-    </section>
-    <!-- Image Section -->
-    <div class=" grid grid-cols-3 fixed h-[100px] justify-around content-center bg-white w-full scroll-pb-0 scroll-mb-0">
-        <div ><MagnifyingGlass class=" text-lime-600 h-[100px] mx-auto w-[100px]"/></div>
-        <div><MagnifyingGlass class=" text-lime-600 h-[100px] mx-auto w-[100px]"/></div>
-        <div><MagnifyingGlass class=" text-lime-600 h-[100px] mx-auto w-[100px]"/></div>
-    </div>
 
 </body>
