@@ -1,0 +1,43 @@
+---
+import SearchUbication from '../components/search/Search.astro';
+import ProgressIndicator from "../components/progress/ProgressIndicator.astro";
+import Timeindicator from "../components/progress/TimeIndicator.astro";
+import ImageProgress from "../components/progress/ImageProgress.astro";
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class=" bg-slate-200 min-h-screen overflow-y-hidden">
+
+		<header class="h-[18vh]">
+			<div class="grid grid-rows bg-white p-3">
+				<SearchUbication/>
+				<Timeindicator/>
+				<ProgressIndicator/>
+			</div>
+		</header>
+
+		<section class="h-[70vh] grid grid-rows content-center mx-4">
+			<ImageProgress/>
+		</section>
+
+		<footer class="flex justify-center items-center bg-white h-[12vh] mt-2">
+			<Footer>
+		</footer>
+	</body>
+</html>
