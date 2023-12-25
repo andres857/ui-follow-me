@@ -1,9 +1,19 @@
+---
+const {height} = Astro.props;
+const cls = [
+    height,
+    'grid',
+    'content-center'
+]
+---
+    
+<div class={cls.join(' ')}>
     <!-- Indication Section -->
     <div class="flex items-center bg-follow h-[8vh] rounded-t-xl">
         <h3 class="text-white text-2xl font-medium mx-auto">Sigue recto</h3>
     </div>
     <!-- Image -->
-    <div class="relative h-[62vh]">
+    <div class="relative h-[57vh]">
         <img src="https://winbox-assets.sfo3.digitaloceanspaces.com/followtest/IMG_1911.jpg" alt=""  class=" object-cover h-full w-full rounded-b-lg">
 
         <div class="absolute top-4 w-full flex justify-end items-center px-4 h-[50px] ">
@@ -30,5 +40,6 @@
                 <h4 class="text-white text-xl font-medium">Piso 1</h4>
             </div>
         </div>
-
     </div>
+</div>
+
