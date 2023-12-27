@@ -1,0 +1,33 @@
+---
+import Loading from "../components/Loading.astro";
+import FooterLogin from "../components/Footers/FooterLogin.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+</head>
+<body>
+    <section class=" bg-white min-h-screen overflow-y-hidden">
+        <main class="grid h-[85vh] md:h-[100vh] bg-center bg-no-repeat bg-cover" style="background-image: url('https://mediaweb.sfo3.cdn.digitaloceanspaces.com/backgroundFollowme.jpg');">
+                <Loading></Loading>
+        </main>
+        <footer class="flex justify-center items-center bg-white h-[15vh] md:hidden md:bg-transparent">
+            <FooterLogin></FooterLogin>
+        </footer>
+    </section>
+</body>
+</html>
