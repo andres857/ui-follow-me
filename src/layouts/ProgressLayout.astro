@@ -1,5 +1,5 @@
 ---
-import SearchUbication from '../components/search/Search.astro';
+import Search from '../components/search/SearchComponent.vue';
 import ProgressIndicator from "../components/progress/ProgressIndicator.astro";
 import Timeindicator from "../components/progress/TimeIndicator.astro";
 import ImageProgress from "../components/progress/ImageProgress.astro";
@@ -27,7 +27,7 @@ const { title } = Astro.props;
 
 			<header class="h-[16vh] bg-white grid content-center ">
 				<div class="grid grid-rows p-3">
-					<SearchUbication/>
+					<Search client:load/>
 					<Timeindicator/>
 					<ProgressIndicator/>
 				</div>
